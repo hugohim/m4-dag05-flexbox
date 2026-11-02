@@ -16,6 +16,10 @@ header {
   background-color: #5b3a29;
   color: #ffffff;
   padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap
 }
 
 header h1 {
@@ -26,6 +30,8 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
@@ -48,7 +54,10 @@ article {
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
 }
+.pris {margin-top: auto}
 
 article img,
 #om-oss img {
@@ -71,6 +80,9 @@ footer {
   background-color: #2b1c14;
   color: #ffffff;
   padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer a {
@@ -196,3 +208,16 @@ legend {
   font-weight: 700;
   padding: 0 8px;
 }
+
+/*
+Steg 5
+center:allt så nära center, utan mellanrum
+flex-end: allt skjuts så längst bort, utan mellanrum
+space around: ger jämt mellanrum på alla sidor om alla element
+align-items: bestämmer hur elementen ska centreras på den andra axeln
+
+Steg 6
+justify-content styr huvudaxeln, den riktining items flödar i flex
+align-items styr den andra.
+
+*/
